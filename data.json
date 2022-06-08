@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "mehedi",
+      "location": "Bangladesh",
+      "phone": "01623444444"
+    },
+    {
+      "id": 2,
+      "name": "khan",
+      "location": "Bangladesh",
+      "phone": "01623555555"
+    },
+    {
+      "id": 3,
+      "name": "rafiul",
+      "location": "Bangladesh",
+      "phone": "01623888888"
+    }
+  ]
+}

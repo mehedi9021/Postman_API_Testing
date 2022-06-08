@@ -1,0 +1,237 @@
+{
+	"id": "4ed3d3b2-b80c-46d0-a1a3-88628de7cbc4",
+	"name": "DemoRestAPIS",
+	"timestamp": "2022-03-13T05:03:37.929Z",
+	"collection_id": "19949499-17934f83-8d91-415c-8971-964e1c77c971",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 11,
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "930a5706-f796-44c5-a56f-fb7051fae58c",
+			"name": "Request1",
+			"url": "https://reqres.in/api/users?page=2",
+			"time": 723,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				723
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "8d5cdf3a-e7ca-431a-a49b-1b9b85ccc4fe",
+			"name": "Page_2UserData",
+			"url": "https://reqres.in/api/users?page=2",
+			"time": 191,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"validating status code": true,
+				"validating response body": true,
+				"page": true
+			},
+			"testPassFailCounts": {
+				"validating status code": {
+					"pass": 1,
+					"fail": 0
+				},
+				"validating response body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"page": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				191
+			],
+			"allTests": [
+				{
+					"validating status code": true,
+					"validating response body": true,
+					"page": true
+				}
+			]
+		},
+		{
+			"id": "2ae95eec-3772-48f9-9079-bc0e88e516eb",
+			"name": "SingleUserGetRequest",
+			"url": "https://reqres.in/api/users/2",
+			"time": 187,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"validating status code": true,
+				"validating response body": true,
+				"test first_name": true,
+				"test last_name ": true
+			},
+			"testPassFailCounts": {
+				"validating status code": {
+					"pass": 1,
+					"fail": 0
+				},
+				"validating response body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"test first_name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"test last_name ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				187
+			],
+			"allTests": [
+				{
+					"validating status code": true,
+					"validating response body": true,
+					"test first_name": true,
+					"test last_name ": true
+				}
+			]
+		},
+		{
+			"id": "02acf5e8-7f7f-4c13-ad1a-3fd86b6f23a6",
+			"name": "CreateUserPostRequest",
+			"url": "https://reqres.in/api/users",
+			"time": 219,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"validating name": true,
+				"validating job": true,
+				"validating status code": true
+			},
+			"testPassFailCounts": {
+				"validating name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"validating job": {
+					"pass": 1,
+					"fail": 0
+				},
+				"validating status code": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				219
+			],
+			"allTests": [
+				{
+					"validating name": true,
+					"validating job": true,
+					"validating status code": true
+				}
+			]
+		},
+		{
+			"id": "31769a6f-9218-4fce-9776-5a12b32edc86",
+			"name": "LoginPostRequest",
+			"url": "https://reqres.in/api/login",
+			"time": 217,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"validating tokens": true
+			},
+			"testPassFailCounts": {
+				"validating tokens": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				217
+			],
+			"allTests": [
+				{
+					"validating tokens": true
+				}
+			]
+		},
+		{
+			"id": "6f1f9b7c-b848-4989-be26-98b8022d38bf",
+			"name": "LoginPostRequestNegative",
+			"url": "https://reqres.in/api/login",
+			"time": 215,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"validating tokens": false
+			},
+			"testPassFailCounts": {
+				"validating tokens": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				215
+			],
+			"allTests": [
+				{
+					"validating tokens": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1752,
+	"collection": {
+		"requests": [
+			{
+				"id": "930a5706-f796-44c5-a56f-fb7051fae58c",
+				"method": "GET"
+			},
+			{
+				"id": "8d5cdf3a-e7ca-431a-a49b-1b9b85ccc4fe",
+				"method": "GET"
+			},
+			{
+				"id": "2ae95eec-3772-48f9-9079-bc0e88e516eb",
+				"method": "GET"
+			},
+			{
+				"id": "02acf5e8-7f7f-4c13-ad1a-3fd86b6f23a6",
+				"method": "POST"
+			},
+			{
+				"id": "31769a6f-9218-4fce-9776-5a12b32edc86",
+				"method": "POST"
+			},
+			{
+				"id": "6f1f9b7c-b848-4989-be26-98b8022d38bf",
+				"method": "POST"
+			}
+		]
+	}
+}
